@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/variants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:weightSum="3"
+        android:background="@android:color/background_dark"
+        >
+        <Button
+            android:id="@+id/btn_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="Orders"
+            android:background="@null"
+            android:textSize="16sp"
+            android:textColor="#fff"/>
+        <Button
+            android:id="@+id/btn_shares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@null"
+            android:text="Shares"
+            android:textColor="#fff"/>
+        <Button
+            android:id="@+id/btn_views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@null"
+            android:text="Views"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+    <ListView android:id="@+id/list_pop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:overScrollMode="always"
+        android:layout_below="@id/variants"
+        />
+
+</RelativeLayout>
